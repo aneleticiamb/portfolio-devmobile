@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Cadastro</h1>
+
+    <form onsubmit="validar()">
+        <label>Nome</label><br>
+        <input type="text" id="nome" placeholder="Digite um nome"><br><br>
+
+        <label>Email</label><br>
+        <input type="email"><br><br>
+
+        <label>Senha</label><br>
+        <input type="password"><br><br>
+
+        <label>Gênero</label><br>
+        <input type="radio" name="sexo">Masculino
+        <input type="radio" name="sexo">Feminino<br><br>
+
+        <label>Mensagem</label><br>
+        <textarea></textarea><br><br>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+
+    <script>
+        function validar(){
+            let nome = document.getElementById("nome").value;
+            
+
+            if(nome == ""){
+                alert("Preencha o campo de nome!")
+            }else{
+                alert("Login bem sucedido")
+            }
+        }
+    </script>
+</body>
+</html>
